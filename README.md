@@ -8,36 +8,34 @@ The project is organized as follows:
 
 petshop-project/
 ├── backend/
-│ ├── node_modules/
-│ ├── app.js
-│ ├── src/
-│ │ ├── controllers/
-│ │ │ └── petshopController.js
-│ │ ├── routes/
-│ │ │ └── petshopRoutes.js
-│ │ └── services/
-│ │ └── petshopService.js
-│ ├── package-lock.json
-│ └── package.json
+│   ├── node_modules/
+│   ├── app.js
+│   ├── src/
+│   │   ├── controllers/
+│   │   │   └── petshopController.js
+│   │   ├── routes/
+│   │   │   └── petshopRoutes.js
+│   │   └── services/
+│   │       └── petshopService.js
+│   ├── package-lock.json
+│   └── package.json
 ├── frontend/
-│ ├── node_modules/
-│ ├── public/
-│ │ ├── img/
-│ │ │ └──  logo-petshop.png
-│ │ ├── index.html
-│ ├── src/
-│ │ ├── components/
-│ │ │ └── PetshopForm.js
-│ │ ├── App.js
-│ │ ├── App.css
-│ │ ├── index.js
-│ │ └── index.css
-│ ├── package-lock.json
-│ ├── package.json
+│   ├── node_modules/
+│   ├── public/
+│   │   ├── img/
+│   │   │   └── logo-petshop.png
+│   │   ├── index.html
+│   ├── src/
+│   │   ├── components/
+│   │   │   └── PetshopForm.js
+│   │   ├── App.js
+│   │   ├── App.css
+│   │   ├── index.js
+│   │   └── index.css
+│   ├── package-lock.json
+│   ├── package.json
 ├── vercel.json
 └── README.md
-
-
 
 ## Installation
 
