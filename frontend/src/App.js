@@ -14,7 +14,6 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
   
-    // Validation for past date
     const selectedDate = new Date(date);
     const today = new Date();
   
@@ -24,13 +23,11 @@ function App() {
       return;
     }
   
-    // Validation for zero dogs
     if (smallDogs <= 0 && largeDogs <= 0) {
       setError('Você deve adicionar pelo menos um cão pequeno ou grande.');
       return;
     }
   
-    // Validation for negative numbers
     if (smallDogs < 0 || largeDogs < 0) {
       setError('O número de cachorros não pode ser negativo.');
       return;
@@ -43,7 +40,7 @@ function App() {
         largeDogs: parseInt(largeDogs),
       });
       setResult(response.data);
-      setError(''); // Clear any previous error
+      setError('');
     } catch (error) {
       console.error('Error fetching data:', error);
       setError('Ocorreu um erro ao buscar os dados.');
