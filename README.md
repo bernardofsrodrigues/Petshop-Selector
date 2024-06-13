@@ -5,35 +5,39 @@ This project consists of a web application that helps users find the best pet sh
 ## Project Structure
 
 The project is organized as follows:
+
 ```
 petshop-project/
 ├── backend/
-│   ├── node_modules/
-│   ├── app.js
-│   ├── src/
-│   │   ├── controllers/
-│   │   │   └── petshopController.js
-│   │   ├── routes/
-│   │   │   └── petshopRoutes.js
-│   │   └── services/
-│   │       └── petshopService.js
-│   ├── package-lock.json
-│   └── package.json
+│ ├── node_modules/
+│ ├── app.js
+│ ├── test/
+│ │ └── petshop.test.js
+│ ├── src/
+│ │ ├── controllers/
+│ │ │ └── petshopController.js
+│ │ ├── routes/
+│ │ │ └── petshopRoutes.js
+│ │ └── services/
+│ │ └── petshopService.js
+│ ├── package-lock.json
+│ └── package.json
 ├── frontend/
-│   ├── node_modules/
-│   ├── public/
-│   │   ├── img/
-│   │   │   └── logo-petshop.png
-│   │   ├── index.html
-│   ├── src/
-│   │   ├── components/
-│   │   │   └── PetshopForm.js
-│   │   ├── App.js
-│   │   ├── App.css
-│   │   ├── index.js
-│   │   └── index.css
-│   ├── package-lock.json
-│   ├── package.json
+│ ├── node_modules/
+│ ├── public/
+│ │ ├── img/
+│ │ │ └── logo-petshop.png
+│ │ ├── index.html
+│ ├── src/
+│ │ ├── components/
+│ │ │ └── PetshopForm.js
+│ │ ├── App.js
+│ │ ├── App.test.js
+│ │ ├── App.css
+│ │ ├── index.js
+│ │ └── index.css
+│ ├── package-lock.json
+│ ├── package.json
 ├── vercel.json
 └── README.md
 ```
@@ -89,7 +93,12 @@ Automated backend tests use Jest and Supertest.
     cd backend
     ```
 
-2. Run the tests:
+2. Ensure the backend server is not running to avoid port conflicts:
+    ```sh
+    npm stop
+    ```
+
+3. Run the tests:
     ```sh
     npm test
     ```
@@ -116,6 +125,7 @@ Automated frontend tests use Jest and React Testing Library.
 - **src/controllers/petshopController.js**: Controller that handles requests related to pet shops.
 - **src/routes/petshopRoutes.js**: Defines the API routes.
 - **src/services/petshopService.js**: Contains the business logic for finding the best pet shop.
+- **test/petshop.test.js**: Contains unit tests for the pet shop API.
 
 ### Frontend
 
@@ -123,6 +133,7 @@ Automated frontend tests use Jest and React Testing Library.
 - **public/img/logo-petshop.png**: Pet shop logo.
 - **src/components/PetshopForm.js**: Form component for inputting pet shop search criteria.
 - **src/App.js**: Main component of the React application.
+- **src/App.test.js**: Contains unit tests for the App component.
 - **src/App.css**: Styles specific to the App component.
 - **src/index.js**: Entry point of the React application.
 - **src/index.css**: Global styles for the application.
