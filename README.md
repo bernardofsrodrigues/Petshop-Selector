@@ -5,7 +5,7 @@ This project consists of a web application that helps users find the best pet sh
 ## Project Structure
 
 The project is organized as follows:
-
+```
 petshop-project/
 ├── backend/
 │   ├── node_modules/
@@ -36,6 +36,7 @@ petshop-project/
 │   ├── package.json
 ├── vercel.json
 └── README.md
+```
 
 ## Installation
 
